@@ -22,6 +22,13 @@ namespace WindowsFormsApp1
             Name = nameInput;
             DailyPrice = dailyPriceInput;
             DaysWorked = daysWorkedInput;
+
+            CalculateIR();
+            
+        }
+
+        private void CalculateIR()
+        {
             BaseWage = DailyPrice * DaysWorked;
             IRTax = 0;
 
@@ -43,8 +50,6 @@ namespace WindowsFormsApp1
             }
 
             IRTotalTax = BaseWage * IRTax;
-
-            
         }
 
     }
